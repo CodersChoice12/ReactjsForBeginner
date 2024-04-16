@@ -1,0 +1,45 @@
+.root {
+  background-color: #efefef;
+  height: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.card_container {
+  height: 500px;
+  width: 320px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card_img {
+  height: 40%;
+  width: 100%;
+}
+
+.card_content {
+  padding: 20px;
+  text-align: center;
+}
+
+.text-content {
+  margin-bottom: 1.5rem;
+}
+
+.card_content button,
+.root button,
+body button {
+  color: green;
+  border: 1px solid green;
+  background-color: #fff;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+.body {
+  display: none;
+}
