@@ -1,6 +1,6 @@
 .root {
   background-color: #efefef;
-  height: auto;
+  min-height: 100vh;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -10,10 +10,32 @@
 }
 
 .card_container {
-  height: 500px;
+  height: auto;
   width: 320px;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+
+.another_content {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  top: 20%;
+}
+
+.another_content > .icon-wrapper {
+  background-color: none;
+  cursor: pointer;
+}
+
+.card_container:hover {
+  opacity: 0.5;
+}
+
+.card_container:hover .another_content {
+  opacity: 1;
 }
 
 .card_img {
@@ -30,9 +52,8 @@
   margin-bottom: 1.5rem;
 }
 
-.card_content button,
-.root button,
-body button {
+.card_content > button,
+.button-wrapper > button {
   color: green;
   border: 1px solid green;
   background-color: #fff;
@@ -42,4 +63,12 @@ body button {
 
 .body {
   display: none;
+}
+
+.searchbar {
+  border: 1px solid #d0d5dd;
+  padding: 7.5px 14px;
+  outline: none;
+  border-radius: 8px;
+  width: 70%;
 }
