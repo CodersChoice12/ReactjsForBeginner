@@ -72,3 +72,9 @@
   border-radius: 8px;
   width: 70%;
 }
+
+.not_found_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}

@@ -3,16 +3,16 @@ import "../../App.css";
 import { MdDeleteOutline } from "react-icons/md";
 import { FiEdit } from "react-icons/fi";
 
-const CardComponent = ({ data, setData }) => {
+const CardComponent = ({ cardData, setData }) => {
   const handleDelete = (id) => {
-    const filteredData = data.filter((card) => card.id !== id);
+    const filteredData = cardData.filter((card) => card.id !== id);
 
     setData(filteredData);
   };
   return (
     <>
-      {data.map((card) => {
-        const { id, title, para, imgUrl } = card;
+      {cardData.map((card) => {
+        const { id, title, imgUrl, para } = card;
         return (
           <div id={id} className="card_container">
             <img className="card_img" src={imgUrl} alt="" />
